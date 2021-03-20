@@ -299,9 +299,9 @@ footer
 }
 
 @keyframes balls
-{
-    0%{transform: scale(.4); color: rgb(75, 19, 139);}
-    100%{transform: scale(1.2); color: yellow;}
+{ 
+    0%{transform: scale(.4); color:yellow ;}
+    100%{transform: scale(1.2); color: rgb(75, 19, 139);}
     
 
 }
