@@ -1,0 +1,334 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: alks;
+    src: url(../font/bpg-banner-quadrosquare-caps-webfont.woff);
+}
+
+nav
+{
+    background-color: rgb(250, 244, 244);
+    box-shadow: 3px 3px 3px #cccc;
+}
+.container
+{
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+
+}
+ .row
+ {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+ }
+
+.ul-cl 
+{
+    display: flex;
+    list-style: none;
+    padding: 24px;
+    margin-left: auto;
+
+}
+
+.ul-cl li
+{
+    display: block;
+  right: 5px;
+
+}
+
+a
+{
+    text-decoration: none;
+}
+.ul-cl li a
+{
+    font-family: alks;
+    color: rgb(197, 123, 123);
+    padding:1rem ;
+}
+.droplist
+{
+    position: relative;
+}
+
+.dropdown 
+{
+    position: absolute;
+    display: block;
+  background-color: lavender;
+
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #cccc;
+  width: 136px;
+    height: 0rem;
+    opacity: 0;
+    pointer-events: none;
+}
+.logo
+{
+    width: 97px;
+}
+
+.dropdown a
+{
+    display: block;
+    text-align: center;
+}
+.droplist:hover .dropdown
+{
+    height: 12rem;
+       transition:all .5s; 
+    opacity: 1;
+    pointer-events: all;
+    z-index: 99;
+}
+
+
+.txt
+{
+    display: flex;
+    align-items: center;
+    background-image: url(../images/unnamed.png);
+    background-repeat: no-repeat;
+    height: 360px;
+    box-shadow: 3px 3px 3px rgba(37, 35, 35, 0.8);
+  
+}
+
+.txt .row
+{
+justify-content: flex-end;
+}
+.text
+{
+    background-color: #ad932733;
+    padding: 19px 55px;
+    border-radius: 86px;
+    text-align: center;
+    position: relative;
+}
+.texter
+{
+    position: relative;
+    background-color: #f8c12ca1;
+    border: 7px solid #660d98a1;
+    border-radius: 86px;
+    padding: 107px 38px;
+ 
+}
+.lists
+{
+    display: flex;
+    padding: 30px 0px;
+    
+}
+.lists li
+{
+    font-family: alks;
+    padding: 6px 19px;
+    list-style: none;
+    background-color: #eefbe08f;
+
+    z-index: -1;
+}
+
+.lists li:first-child 
+{
+    font-weight: bold;
+    background-color: black;
+    color: rgb(145, 102, 38);
+}
+
+
+.all  .all-card
+{
+    padding-inline-end: 12px;
+    padding-block-end: 12px;
+} 
+
+  .all-card
+{
+    width: 33%;
+ 
+}
+
+
+.crd-txt
+{
+    text-align: center;
+    align-items: center;
+    font-family: alks;
+    padding: 13px;
+line-height: 22.6px;
+}
+.card
+{
+    border: 3px solid #cccc;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px #cccc;
+}
+.card img
+{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px #cccc;
+
+}
+section .all-card
+{
+    display: inline-flex;
+}
+
+
+
+.blog
+{
+    background-color: #cccc;
+    
+}
+
+.blog .crd-txt
+{
+    padding: 70px;
+    font-family: alks;
+}
+
+
+.videos
+{
+    display: flex;
+    width:  33.3%;
+}
+
+.vid 
+{
+    display: flex;
+    border: 3px solid goldenrod;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(37, 35, 35, 0.8);
+    margin: 8px;
+}
+
+.blog .row
+{
+    display: flex;
+}
+footer
+{
+    background-color: cornsilk;
+}
+
+.social
+{
+    display: flex;
+    padding: 11px;
+    justify-content: flex-end;
+}
+
+.social a{
+    margin: 24px;
+    color: gainsboro;
+    padding: 6px;
+}
+
+
+
+.social .logos a:first-child{
+   background-color: #3b5999;
+   border-radius: 7px;
+  
+}
+
+.social  .logos a:nth-child(2){
+    background-color: #1da1f2;
+    border-radius: 7px;
+ }
+
+
+
+ .social  .logos a:nth-child(3){
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 7px;
+ }
+
+
+ .social .logos  a:last-child{
+    background: linear-gradient(90deg, rgba(60, 186, 84) 0%, rgba(244, 194, 13) 50% , rgba(219, 50, 54) 100% , rgba(72, 133, 237) 50% );
+    border-radius: 7px;
+ }
+
+.cc
+{
+    position: relative;
+    color: #b3a5a5;
+    right: 465px;
+}
+.sbch
+{
+  position: absolute;
+      right: 154px;
+}
+
+
+
+
+.centers svg
+{
+    position: absolute;
+     bottom: 45px;
+    animation-name: balls;
+    animation-duration:unset;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes balls
+{
+    0%{transform: scale(.4); color: rgb(75, 19, 139);}
+    100%{transform: scale(1.2); color: yellow;}
+    
+
+}
+
+
+
+@media (max-width:1200px)
+{
+   .text
+   {
+       display: none;
+       padding: 0px;
+   }
+
+   .videos  
+   {
+       flex-wrap: wrap;
+       width: 50%;
+       justify-content: center;
+   }
+   .cc
+   {
+    display: none;
+   }
+   .social
+   {
+    justify-content:center;
+   }
+ 
+}
